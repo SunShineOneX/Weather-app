@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Component } from 'react'
 import Friday from './Friday';
 
 class Navbar extends Component {
@@ -13,7 +13,7 @@ class Navbar extends Component {
     render() {
         return (
             <div>
-                <nav class="navbar navbar-expand-lg" style="background-color: #ffa931">
+                <nav class="navbar navbar-light navbar-expand-lg" id="nav">
   <a class="navbar-brand" href="#">Forecast</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
