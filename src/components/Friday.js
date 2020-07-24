@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default class Friday extends Component {
+class Friday extends Component {
     constructor(props) {
         super(props);
         this.state = {

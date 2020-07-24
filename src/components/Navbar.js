@@ -1,7 +1,7 @@
 import React from 'react'
 import Friday from './Friday';
 
-export default class Navbar extends Component {
+class Navbar extends Component {
     constructor(props) {
         super(props);
         this.state = {
