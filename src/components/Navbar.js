@@ -31,7 +31,7 @@ export default class Navbar extends Component {
           <a class="dropdown-item" href="#">Thursday</a>
           <a class="dropdown-item" href="#">Friday</a>
           <a class="dropdown-item" href="#">Saturday</a>
-          <a class="dropdown-item" href="#">Something else here</a>
+          <a class="dropdown-item" href="#">Sunday</a>
         </div>
       </li>
     </ul>
