@@ -1,6 +1,13 @@
 import React, { Component } from 'react'
 import { BrowserRouter as Router, Switch, Route, Link } from  "react-router-dom";
+import Forecast from './Forecast';
+import Monday from './Monday';
+import Tuesday from './Tuesday';
+import Wednesday from './Wednesday';
+import Thursday from './Thursday';
 import Friday from './Friday';
+import Saturday from './Saturday';
+import Sunday from './Sunday';
 
 class Navbar extends Component {
     constructor(props) {
@@ -13,6 +20,7 @@ class Navbar extends Component {
     
     render() {
         return (
+            <Router>
             <div>
                 <nav class="navbar navbar-light navbar-expand-lg" id="nav">
   <a class="navbar-brand" href="#">Forecast</a>
@@ -39,6 +47,7 @@ class Navbar extends Component {
   </div>
 </nav>
             </div>
+            </Router>
         )
     }
 }
