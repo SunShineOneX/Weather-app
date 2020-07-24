@@ -1,0 +1,13 @@
+import React from 'react'
+
+export default class Forecast extends Component {
+    render() {
+        return (
+            <div>
+                
+            </div>
+        )
+    }
+}
+
+export default Forecast;
