@@ -52,9 +52,9 @@ class Navbar extends Component {
     <Route path="/Tuesday" component={Tuesday} />
     <Route path="/Wednesday" component={Wednesday} />
     <Route path="/Thursday" component={Thursday} />
-    <Route path="/Monday" component={Monday} />
-    <Route path="/Monday" component={Monday} />
-    <Route path="/Monday" component={Monday} />
+    <Route path="/Friday" component={Friday} />
+    <Route path="/Saturday" component={Saturday} />
+    <Route path="/Sunday" component={Sunday} />
 </Switch>
             </div>
             </Router>
