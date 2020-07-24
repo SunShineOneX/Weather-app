@@ -12,7 +12,7 @@ class Friday extends Component {
     render() {
         return (
             <div>
-                
+                <h1>Hello Friday!</h1>
             </div>
         )
     }

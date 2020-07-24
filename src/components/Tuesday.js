@@ -11,7 +11,7 @@ class Tuesday extends Component {
     render() {
         return (
             <div>
-                
+                <h1>Hello Tuesday!</h1>
             </div>
         )
     }

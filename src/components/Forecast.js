@@ -12,7 +12,7 @@ class Forecast extends Component {
     render() {
         return (
             <div>
-                
+                <h1>Hello Forecast!</h1>
             </div>
         )
     }

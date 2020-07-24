@@ -23,7 +23,7 @@ class Navbar extends Component {
             <Router>
             <div>
                 <nav class="navbar navbar-light navbar-expand-lg" id="nav">
-  <a class="navbar-brand" href="#"><Link to="/Forecast">Forecast</Link></a>
+  <a class="navbar-brand" href="#"><Link to="/">Forecast</Link></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
