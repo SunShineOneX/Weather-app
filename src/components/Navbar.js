@@ -1,4 +1,5 @@
 import React from 'react'
+import Friday from './Friday';
 
 export default class Navbar extends Component {
     constructor(props) {
@@ -28,8 +29,8 @@ export default class Navbar extends Component {
           <a class="dropdown-item" href="#">Tuesday</a>
           <a class="dropdown-item" href="#">Wednesday</a>
           <a class="dropdown-item" href="#">Thursday</a>
-          <a class="dropdown-item" href="#">Something else here</a>
-          <a class="dropdown-item" href="#">Something else here</a>
+          <a class="dropdown-item" href="#">Friday</a>
+          <a class="dropdown-item" href="#">Saturday</a>
           <a class="dropdown-item" href="#">Something else here</a>
         </div>
       </li>
