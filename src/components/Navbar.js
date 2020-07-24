@@ -34,13 +34,13 @@ class Navbar extends Component {
           Dropdown link
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">Monday</a>
-          <a class="dropdown-item" href="#">Tuesday</a>
-          <a class="dropdown-item" href="#">Wednesday</a>
-          <a class="dropdown-item" href="#">Thursday</a>
-          <a class="dropdown-item" href="#">Friday</a>
-          <a class="dropdown-item" href="#">Saturday</a>
-          <a class="dropdown-item" href="#">Sunday</a>
+          <a class="dropdown-item" href="#"><Link to="/Monday">Monday</Link></a>
+          <a class="dropdown-item" href="#"><Link to="/Tuesday">Tuesay</Link></a>
+          <a class="dropdown-item" href="#"><Link to="/Monday">Monday</Link></a>
+          <a class="dropdown-item" href="#"><Link to="/Monday">Monday</Link></a>
+          <a class="dropdown-item" href="#"><Link to="/Monday">Monday</Link></a>
+          <a class="dropdown-item" href="#"><Link to="/Monday">Monday</Link></a>
+          <a class="dropdown-item" href="#"><Link to="/Monday">Monday</Link></a>
         </div>
       </li>
     </ul>
