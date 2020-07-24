@@ -46,6 +46,9 @@ class Navbar extends Component {
     </ul>
   </div>
 </nav>
+<Switch>
+    
+</Switch>
             </div>
             </Router>
         )
