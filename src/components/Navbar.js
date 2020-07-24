@@ -24,8 +24,8 @@ export default class Navbar extends Component {
           Dropdown link
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Monday</a>
+          <a class="dropdown-item" href="#">Tuesday</a>
           <a class="dropdown-item" href="#">Something else here</a>
           <a class="dropdown-item" href="#">Something else here</a>
           <a class="dropdown-item" href="#">Something else here</a>
