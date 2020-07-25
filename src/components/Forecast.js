@@ -18,28 +18,49 @@ class Forecast extends Component {
         super(props);
         this.state = {
             info: [],
+            info2: [],
+            propertyName: []
         }
     }
-
     async getForecast() {
         try {
             const res = await axios.get(apiCall)
             console.log(res.data);
-            this.setState({info: res.data});
+            this.setState({info: res.data.weather});
+            this.setState({info2: this.state.info[0].main});
+        // console.log(this.state.info2);
+        console.log(res.data.weather);
+
         } catch {
             console.log("error!!!!");
         }
     }
+    // console.log(info);
+    // console.log(info2);
+
+    // changePropertyName(property) {
+    //     this.state.propertyName = property
+    // }
  
     componentDidMount() {
         this.getForecast();
     }
     
+    
+
     render() {
+        console.log(this.state.info);
+        
+        console.log(this.state.info2);
         return (
             <div>
                 <h1>Hello Forecast!</h1>
-                <h2>{this.state.info.name}</h2>
+                {/* {this.changePropertyName("weather")} */}
+                {/* <h2>{this.state.info.name}</h2> */}
+                <h2>{this.state.info2}</h2>
+                
+                {/* <h2>{this.state.info}</h2> */}
+                {/* <h2>{this.state.info.weather}</h2> */}
             </div>
         )
     }
