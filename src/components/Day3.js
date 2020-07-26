@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
-
-class Thursday extends Component {
+class Day3 extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -12,10 +11,10 @@ class Thursday extends Component {
     render() {
         return (
             <div>
-                <h1>Hello Thursday!</h1>
+                <h1>Hello Day3!</h1>
             </div>
         )
     }
 }
 
-export default Thursday;
+export default Day3;

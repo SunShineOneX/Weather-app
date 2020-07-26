@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
 import { BrowserRouter as Router, Switch, Route, Link } from  "react-router-dom";
 import Forecast from './Forecast';
-import Monday from './Monday';
-import Tuesday from './Tuesday';
-import Wednesday from './Wednesday';
-import Thursday from './Thursday';
-import Friday from './Friday';
-import Saturday from './Saturday';
-import Sunday from './Sunday';
+import Today from './Today';
+import Day2 from './Day2';
+import Day3 from './Day3';
+import Day4 from './Day4';
+import Day5 from './Day5';
+import Day6 from './Day6';
+import Day7 from './Day7';
 import axios from "axios";
 const hidden_api_key = "6873977fa93f67c8469b30670cf21868";
 const apiCall = `https://api.openweathermap.org/data/2.5/onecall?lat=4.6948076&lon=-84.4821498&exclude=hourly,minutely,current&appid=${hidden_api_key}`;
@@ -69,13 +69,13 @@ class Navbar extends Component {
           Dropdown link
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#"><Link to="/Monday">{this.getCurrentDay(this.state.day1)} Today</Link></a>
-          <a class="dropdown-item" href="#"><Link to="/Tuesday">{this.getCurrentDay(this.state.day2)}</Link></a>
-          <a class="dropdown-item" href="#"><Link to="/Wednesday">{this.getCurrentDay(this.state.day3)}</Link></a>
-          <a class="dropdown-item" href="#"><Link to="/Thursday">{this.getCurrentDay(this.state.day4)}</Link></a>
-          <a class="dropdown-item" href="#"><Link to="/Friday">{this.getCurrentDay(this.state.day5)}</Link></a>
-          <a class="dropdown-item" href="#"><Link to="/Saturday">{this.getCurrentDay(this.state.day6)}</Link></a>
-          <a class="dropdown-item" href="#"><Link to="/Sunday">{this.getCurrentDay(this.state.day7)}</Link></a>
+          <a class="dropdown-item" href="#"><Link to="/Today">Today {this.getCurrentDay(this.state.day1)}</Link></a>
+          <a class="dropdown-item" href="#"><Link to="/Day2">{this.getCurrentDay(this.state.day2)}</Link></a>
+          <a class="dropdown-item" href="#"><Link to="/Day3">{this.getCurrentDay(this.state.day3)}</Link></a>
+          <a class="dropdown-item" href="#"><Link to="/Day4">{this.getCurrentDay(this.state.day4)}</Link></a>
+          <a class="dropdown-item" href="#"><Link to="/Day5">{this.getCurrentDay(this.state.day5)}</Link></a>
+          <a class="dropdown-item" href="#"><Link to="/Day6">{this.getCurrentDay(this.state.day6)}</Link></a>
+          <a class="dropdown-item" href="#"><Link to="/Day7">{this.getCurrentDay(this.state.day7)}</Link></a>
         </div>
       </li>
     </ul>
@@ -83,13 +83,13 @@ class Navbar extends Component {
 </nav>
 <Switch>
     <Route exact path="/" component={Forecast} />
-    <Route path="/Monday" component={Monday} />
-    <Route path="/Tuesday" component={Tuesday} />
-    <Route path="/Wednesday" component={Wednesday} />
-    <Route path="/Thursday" component={Thursday} />
-    <Route path="/Friday" component={Friday} />
-    <Route path="/Saturday" component={Saturday} />
-    <Route path="/Sunday" component={Sunday} />
+    <Route path={`/  ${this.getCurrentDay(this.state.day2)}}`} component={Today} />
+    <Route path="/Day2" component={Day2} />
+    <Route path="/Day3" component={Day3} />
+    <Route path="/Day4" component={Day4} />
+    <Route path="/Day5" component={Day5} />
+    <Route path="/Day6" component={Day6} />
+    <Route path="/Day7" component={Day7} />
 </Switch>
             </div>
             </Router>
