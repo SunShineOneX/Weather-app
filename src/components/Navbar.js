@@ -9,15 +9,17 @@ import Day5 from './Day5';
 import Day6 from './Day6';
 import Day7 from './Day7';
 import axios from "axios";
-const hidden_api_key = "6873977fa93f67c8469b30670cf21868";
+const hidden_api_key = "ecdcfaface86216d574a68c8d7711d35";
+
 const apiCall = `https://api.openweathermap.org/data/2.5/onecall?lat=4.6948076&lon=-84.4821498&exclude=hourly,minutely,current&appid=${hidden_api_key}`;
+// https://api.openweathermap.org/data/2.5/onecall?lat=4.6948076&lon=-84.4821498&exclude=minutely,current,daily&appid=6873977fa93f67c8469b30670cf21868
 
 class Navbar extends Component {
     constructor(props) {
         super(props);
         this.state = {
             info: [],
-            day1: [],
+            Today: [],
             day2: [],
             day3: [],
             day4: [],
@@ -31,7 +33,7 @@ class Navbar extends Component {
       try {
         const res = await axios.get(apiCall);
         this.setState({ info: res.data });
-        this.setState({ day1: this.state.info.daily[0].dt});
+        this.setState({ Today: this.state.info.daily[0].dt});
         this.setState({ day2: this.state.info.daily[1].dt});
         this.setState({ day3: this.state.info.daily[2].dt});
         this.setState({ day4: this.state.info.daily[3].dt});
@@ -69,7 +71,7 @@ class Navbar extends Component {
           Dropdown link
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#"><Link to="/Today">Today {this.getCurrentDay(this.state.day1)}</Link></a>
+          <a class="dropdown-item" href="#"><Link to="/Today">Today {this.getCurrentDay(this.state.Today)}</Link></a>
           <a class="dropdown-item" href="#"><Link to="/Day2">{this.getCurrentDay(this.state.day2)}</Link></a>
           <a class="dropdown-item" href="#"><Link to="/Day3">{this.getCurrentDay(this.state.day3)}</Link></a>
           <a class="dropdown-item" href="#"><Link to="/Day4">{this.getCurrentDay(this.state.day4)}</Link></a>
@@ -83,7 +85,7 @@ class Navbar extends Component {
 </nav>
 <Switch>
     <Route exact path="/" component={Forecast} />
-    <Route path={`/  ${this.getCurrentDay(this.state.day2)}}`} component={Today} />
+    <Route path="/Today" component={Today} />
     <Route path="/Day2" component={Day2} />
     <Route path="/Day3" component={Day3} />
     <Route path="/Day4" component={Day4} />
@@ -98,3 +100,12 @@ class Navbar extends Component {
 }
 
 export default Navbar;
+
+//list[0].main.temp
+//list[1].main.temp
+//list[2].main.temp
+//list[3].main.temp
+
+//Display max temp and min temp for each day with icon done gg dont care
+
+
