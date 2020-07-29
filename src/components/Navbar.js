@@ -68,7 +68,7 @@ class Navbar extends Component {
     <ul class="navbar-nav">
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown link
+          Choose a day
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
           <a class="dropdown-item" href="#"><Link to="/Today">Today {this.getCurrentDay(this.state.Today)}</Link></a>
