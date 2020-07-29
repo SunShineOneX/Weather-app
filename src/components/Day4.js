@@ -4,7 +4,7 @@ import axios from "axios";
 const hidden_api_key = "ecdcfaface86216d574a68c8d7711d35";
 const apiCall = `https://api.openweathermap.org/data/2.5/onecall?lat=33.7490&lon=-84.38798&exclude=hourly,minutely,current&appid=${hidden_api_key}`;
 
-class Day3 extends Component {
+class Day4 extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -71,4 +71,4 @@ class Day3 extends Component {
 
 // https://api.openweathermap.org/data/2.5/weather?zip=30540,us&units=imperial&exclude=hourly,minutely,current&appid=ecdcfaface86216d574a68c8d7711d35
 
-export default Day3;
+export default Day4;
