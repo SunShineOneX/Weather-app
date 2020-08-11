@@ -4,6 +4,8 @@ import axios from "axios";
 const hidden_api_key = "ecdcfaface86216d574a68c8d7711d35";
 const apiCall = `https://api.openweathermap.org/data/2.5/onecall?lat=33.7490&lon=-84.38798&exclude=hourly,minutely,current&appid=${hidden_api_key}`;
 
+// api.openweathermap.org/data/2.5/weather?q=phoenix&appid=ecdcfaface86216d574a68c8d7711d35
+
 class Day2 extends Component {
     constructor(props) {
         super(props);

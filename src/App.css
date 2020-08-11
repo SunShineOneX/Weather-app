@@ -16,3 +16,10 @@
   margin-top: 10vh;
   padding:.5vw;
 }
+
+.city-search {
+  margin-top: 40vh;
+  width: 40%;
+  background-color: lightsalmon;
+  border: 2px solid black;
+}

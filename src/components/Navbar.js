@@ -8,6 +8,8 @@ import Day4 from './Day4';
 import Day5 from './Day5';
 import Day6 from './Day6';
 import Day7 from './Day7';
+import YourWeather from "./YourWeather";
+
 import axios from "axios";
 const hidden_api_key = "ecdcfaface86216d574a68c8d7711d35";
 
@@ -80,6 +82,7 @@ class Navbar extends Component {
           <a class="dropdown-item" href="#"><Link to="/Day7">{this.getCurrentDay(this.state.day7)}</Link></a>
         </div>
       </li>
+      <a class="nav-link" href="#"><Link to="/yourweather">Your Weather</Link></a>
     </ul>
   </div>
 </nav>
@@ -92,6 +95,7 @@ class Navbar extends Component {
     <Route path="/Day5" component={Day5} />
     <Route path="/Day6" component={Day6} />
     <Route path="/Day7" component={Day7} />
+    <Route path="/yourweather" component={YourWeather} />
 </Switch>
             </div>
             </Router>

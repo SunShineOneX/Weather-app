@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
-const hidden_api_key = "ecdcfaface86216d574a68c8d7711d35";
+const hidden_api_key =  "ecdcfaface86216d574a68c8d7711d35";
 const apiCall = `https://api.openweathermap.org/data/2.5/onecall?lat=33.7490&lon=-84.38798&units=imperial&exclude=hourly,minutely,current&appid=${hidden_api_key}`;
 
 class Forecast extends Component {
@@ -173,7 +173,7 @@ class Forecast extends Component {
         </div>
       </div>
     );
-  }
+  } 
 }
 
 export default Forecast;
